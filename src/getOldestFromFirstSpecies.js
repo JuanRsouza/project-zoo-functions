@@ -7,7 +7,8 @@ function getOldestFromFirstSpecies(id) {
   const idadeAnimals = infoPrimeiroAnimal.residents.map((i) => i.age);
   const verificaIdadeMaior = Math.max(...idadeAnimals);
   const animalVelho = infoPrimeiroAnimal.residents.filter((an) => an.age === verificaIdadeMaior);
-  return animalVelho;
+  const spreadArray = Object.values(...animalVelho);
+  return spreadArray;
 }
 
 console.log(getOldestFromFirstSpecies('c5b83cb3-a451-49e2-ac45-ff3f54fbe7e1'));
