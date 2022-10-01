@@ -47,7 +47,7 @@ describe('Testes da função getOpeningHours', () => {
   it(' se getOpeningHours  for chamada com um número entre 0 e 59 no campo de minutos função lançara um erro', () => {
     expect(() => { getOpeningHours('Wednesday', '09:120-AM'); }).toThrow();
   });
-  it(' se getOpeningHours  for chamada com um número entre 0 e 59 no campo de minutos função lançara um erro', () => {
+  it(' se getOpeningHours  for chamada com um dia que não está incluso em WeekDays função lançara um erro', () => {
     expect(() => { getOpeningHours('Segunda', '09:120-AM'); }).toThrowError('The day must be valid. Example: Monday');
   });
 });
