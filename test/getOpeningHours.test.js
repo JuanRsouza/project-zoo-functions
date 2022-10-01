@@ -27,4 +27,27 @@ describe('Testes da função getOpeningHours', () => {
     const expected = 'The zoo is open';
     expect(actual).toBe(expected);
   });
+  it('  se getOpeningHoursfor for chamada com um dia e uma hora em que o zoo está aberto, deve retornar uma mensagem avisando que o zoo está aberto', () => {
+    const actual = getOpeningHours('Wednesday', '09:00-AM');
+    const expected = 'The zoo is open';
+    expect(actual).toBe(expected);
+  });
+  it(' se getOpeningHours  for chamada com a hora sem AM ou PM a função lançara um erro', () => {
+    expect(() => { getOpeningHours('Wednesday', '09:00-AC'); }).toThrow();
+  });
+  it(' se getOpeningHours  for chamada com a hora sem AM ou PM a função lançara um erro', () => {
+    expect(() => { getOpeningHours('Wednesday', '09:00-AC'); }).toThrow();
+  });
+  it(' se getOpeningHours  for chamada com a hora errada a função lançara um erro', () => {
+    expect(() => { getOpeningHours('Wednesday', '09'); }).toThrow();
+  });
+  it(' se getOpeningHours  for chamada com um número entre 0 e 12 no campo de horas função lançara um erro', () => {
+    expect(() => { getOpeningHours('Wednesday', '80:00-AM'); }).toThrow();
+  });
+  it(' se getOpeningHours  for chamada com um número entre 0 e 59 no campo de minutos função lançara um erro', () => {
+    expect(() => { getOpeningHours('Wednesday', '09:120-AM'); }).toThrow();
+  });
+  it(' se getOpeningHours  for chamada com um número entre 0 e 59 no campo de minutos função lançara um erro', () => {
+    expect(() => { getOpeningHours('Segunda', '09:120-AM'); }).toThrowError('The day must be valid. Example: Monday');
+  });
 });
