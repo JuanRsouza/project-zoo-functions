@@ -2,7 +2,7 @@ const data = require('../data/zoo_data');
 
 const diasDaSemana = Object.keys(data.hours);
 
-const animals = data.species.map(({name}) => name);
+const animals = data.species.map(({ name }) => name);
 
 function animalsAvailable(scheduleTarget) {
   const diasDisponiveis = data.species.find((e) => e.name === scheduleTarget);
