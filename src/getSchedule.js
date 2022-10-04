@@ -41,6 +41,5 @@ function getSchedule(scheduleTarget) {
 }
 
 console.log(getSchedule('Tuesday'));
-// console.log(noParam());
 
 module.exports = getSchedule;
