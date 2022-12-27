@@ -1,13 +1,10 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+<h1 aling="center" > Bem vindos ao reposítório do projeto Zoo Functions! </h1>
+<main>
+  <p> Nesse Projeto foram desenvolvidas funções que buscam informações sobre os animais de um zoológico como: espécie e local de origem. Além disso, 
+também busquei dados sobre as pessoas que colaboram com a manutenção e cuidado desse zoológico,e tudo isso, usando o método TDD, para desenvolver com orientação dos testes unitários.
+  </p>
+  <p> - Arquivo zoo_data.js, desenvolvido pelça equipe da Trybe. </p>
+  <p> - Arquivos dentro da Pasta src, todos desenvolvidos por mim.
+ </p> 
+</main>
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
-
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
